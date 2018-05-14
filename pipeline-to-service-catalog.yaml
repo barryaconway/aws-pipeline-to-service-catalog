@@ -268,7 +268,7 @@ Resources:
                 ActionMode: CREATE_UPDATE
                 StackName: !Sub service-catalog-sync-lambda
                 Capabilities: CAPABILITY_NAMED_IAM
-                TemplatePath: BuildOutput::samtemplate.yaml
+                TemplatePath: BuildOutput::samtemplate.yaml 
                 RoleArn: !GetAtt CFDeployerRole.Arn
               InputArtifacts:
                 - Name: BuildOutput
